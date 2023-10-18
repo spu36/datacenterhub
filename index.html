@@ -18,8 +18,8 @@
   </head>
   <body>
     <div class="container py-4 px-3 mx-auto">
-      <header class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+      <header class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom">  
+        <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Main navigation">
           <div class="container-fluid">
             <a class="navbar-brand" href="/">databasehub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -56,6 +56,14 @@
         </nav>
       </header>
 
+      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        <div class="col-lg-6 px-0">
+          <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+          <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+        </div>
+      </div>
+
       <h1>databasehub</h1>
 
       <div class="col-lg-8 px-0">
@@ -63,12 +71,47 @@
         <p>DOIs listed here are not "working DOIs." They are temporary DOIs. Nevertheless, all the data pertaining to each DOI are accessible through the links provided here. Users are welcome to transfer their data and DOIs to <a href='https://www.designsafe-ci.org/facilities/virtual-office-hours/'>DesignSafe</a>.</p>
       </div>
 
-      <div class="col-lg-8 px-0">  
-        <h2>About databasehub</h2>
-        <p>www.datacenterhub.org was established at Purdue University in 2014 to preserve data and digital infrastructure that was available after the Network for Earthquake Engineering Simulation (NEES) was terminated by National Science Foundation NSF</p>
-        <p>This site is made possible by University of Canterbury, New Zealand, and serves as historical repository of collections of files once housed at datacenterhub without the interactive tools that were available on that site</p>
+      <div class="container my-5">
+        <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+          <h1 class="text-body-emphasis text-uppercase text-secondary">About databasehub</h1>
+          <p class="col-lg-8 mx-auto mb-6">
+            www.datacenterhub.org was established at Purdue University in 2014 to preserve data and digital infrastructure that was available after the Network for Earthquake Engineering Simulation (NEES) was terminated by National Science Foundation NSF<br><br>
+            This site is made possible by University of Canterbury, New Zealand, and serves as historical repository of collections of files once housed at datacenterhub without the interactive tools that were available on that site
+          </p>
+        </div>
       </div>
 
+      <div class="container marketing">  
+        <div class="row">
+          <div class="col-lg-4">
+            <h3 class="fw-normal text-uppercase"><a href="neeshub.html" class="text-secondary">Neeshub Databases</a></h3>
+            <div class="img_wrapper">
+              <img src="images/nees_logo.jpg" class="rounded-rectangle img-thumbnail">
+            </div>
+            <p>Databases that were uploaded to NEESHub</p>
+          </div>
+
+          <div class="col-lg-4">
+            <h3 class="fw-normal text-uppercase"><a href="post-nees.html" class="text-secondary">Post-Nees CE Databases</a></h3>
+            <div class="img_wrapper">
+              <img src="images/RC_Structural_Walls_with_Lap_Splices.jpg" class="rounded-rectangle img-thumbnail">
+            </div>
+            <p>CE Databases uploaded after NEESHub</p>
+          </div>
+
+          <div class="col-lg-4">
+            <h3 class="fw-normal text-uppercase text-secondary">Other Databases</h3>
+            <div class="img_wrapper">
+              <img src="images/SolarPanel.png" class="rounded-rectangle img-thumbnail">
+            </div>
+            <p>For databases not related to Civil Engineering (CE), please contact us. We can help you access a backup with data uploaded up to 2019</p>
+          </div>
+        </div>
+      </div>
+      
+        
+
+        
 
       <h2>Guides</h2>
       <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>

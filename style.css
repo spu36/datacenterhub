@@ -1,0 +1,20 @@
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-top: 1.5rem;
+}
+
+.marketing .col-lg-4 .img_wrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marketing .col-lg-4 img {
+  width: 100%;
+}
