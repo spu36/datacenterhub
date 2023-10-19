@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>datacenterhub (under construction)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- Navigation / Header Section -->
+    <header data-bs-theme="dark">
+        <!-- Offcanvas navigation -->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">databasehub</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="nees.html">NEES Databases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" ref="post-nees.html">Post-NEES Databases</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Top navigation -->
+        <div class="navbar navbar-dark bg-dark shadow-sm" id="topNavigation">
+            <div class="container">
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <strong>databasehub</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="jumbotron jumbotron-fluid" id="nees-jumbotron">
+            <div class="container">
+                <div class="col-md-6 p-lg-6 mx-auto py-5">
+                    <h1 class="display-3 fw-bold">NEES<br>Databases</h1>
+                    <h3 class="fw-normal mb-3">Complete list of NEES datasets originally uploaded to NEESHub</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 text-center bg-danger">
+            <div class="container py-5 text-white">
+                <div class="logoRow">
+                    <img class="bi mb-2 img-thumbnail" width="48" height="48" src="images/nees_logo.jpg">
+                    <img class="bi mb-2 img-thumbnail" width="48" height="48" src="images/databasehubLogo.png">
+                </div>
+                <h1>NEES Databases</h1>
+                <p class="col-lg-8 mx-auto lead">Most datacenterhub databases were originally uploaded to NEESHub and
+                    are now
+                    maintained at <a href="https://www.designsafe-ci.org/" class="link-light">Design Safe</a>. </p>
+                <p class="col-lg-8 mx-auto"> Databases crated on NEESHub
+                    using "DataSTORE" are preserved here as they may not be available at
+                    Design Safe CI.</p>
+                <p class="col-lg-8 mx-auto">
+                    NEESHub databases related to work at Purdue University are also preserved here for redundancy.
+                </p>
+                <p class="col-lg-8 mx-auto">
+                    <a href="https://www.dropbox.com/s/tfjrh6h5xosz9ki/NEES%20Published%20Datasets.csv?dl=0"
+                        class="link-light"><strong>View the complete list of NEES datasets</strong></a> that were
+                    published through
+                    NEEShub and later maintained (until 2023) by datacenterhub
+                </p>
+            </div>
+        </div>
+
+
+        <div class="p-4 bg-body-tertiary">
+            <div class="container">
+                <h3 class="mb-3">Legacy Databases (Developed on DataSTORE)</h3>
+                <ul class="list-group mt-3 mb-3">
+                    <li class="list-group-item">
+                        <span>53</span> <a
+                            href="https://www.dropbox.com/sh/41egf2213xfnwby/AAC11TdTth8xCSlHboe4XIRza?dl=0">UCSB Field
+                            Sites Waveform Data</a> (Magnitude 5.5 or larger events)
+                        DOI:10.4231/D3XP6V349
+                    </li>
+                    <li class="list-group-item">
+                        <span>252</span> <a
+                            href="https://www.dropbox.com/sh/ltqnp5yuo1iaw7n/AAAN5szNgmxSoX3rAF_yqBG0a?dl=0">A Database
+                            for
+                            Seismic Retrofit Construction Cost of Concrete and Steel Framed Schools in Iran</a> DOI:
+                        10.4231/D3959C774
+                    </li>
+                    <li class="list-group-item">
+                        <span>254</span> <a
+                            href="https://www.dropbox.com/sh/17fq3v9721kyzwc/AAAgQp8WV72grpR8tBtpctuaa?dl=0">ACI 369
+                            Circular Column Database</a> DOI: 10.4231/D39Z90B9T
+                    </li>
+                    <li class="list-group-item">
+                        <span>255</span> <a
+                            href="https://www.dropbox.com/sh/3ts6baor1jwo931/AAAQZxZo8JVSnjWbnizTwUEla?dl=0">ACI 369
+                            Rectangular Column Database</a> DOI: 10.4231/D36688J50
+                    </li>
+                    <li class="list-group-item">
+                        <span>256</span> <a
+                            href="https://www.dropbox.com/sh/jg7ygslnau6pr95/AABlOjCgtSyYtvafX-4bjvi6a?dl=0">ACI 445
+                            Punching Shear Collected Databank</a> DOI: 10.4231/D3TX35618
+                    </li>
+                    <li class="list-group-item">
+                        <span>257</span> <a
+                            href="https://www.dropbox.com/sh/zpkqy5w371mnzam/AAA-Omuvwx72tjv5NhnhnPuMa?dl=0">Database
+                            for Structural Control and Monitoring
+                            Benchmark Problems</a> DOI: 10.4231/D3Q52FC7T
+                    </li>
+                    <li class="list-group-item">
+                        <span>258</span> <a
+                            href="https://www.dropbox.com/sh/dlq91bkn70bgkb7/AADnDZQX_wSc8YM_UNnGw47Aa?dl=0">Earthquake
+                            Simulator Video Archive</a> DOI: 10.17603/DS2TH4G
+                    </li>
+                    <li class="list-group-item">
+                        <span>259</span> <a
+                            href="https://www.dropbox.com/sh/k17p1tyulgc1f9x/AABn_WOIrN9AptbkyKAss9RQa?dl=0">Performance
+                            Database for Reinforced Concrete Columns with Spiral Reinforcement</a> DOI:
+                        10.4231/D32F7JR0C
+                    </li>
+                    <li class="list-group-item">
+                        <span>260</span> <a
+                            href="https://www.dropbox.com/scl/fo/gg7ee5dremd2l9r469oz4/h?rlkey=jppzshbflxzcd97grzsmj6f65&dl=0">Shear
+                            Wall
+                            Database</a> DOI:
+                        10.4231/D38C9R416
+                    </li>
+                    </li>
+                    <li class="list-group-item">
+                        <span>261</span> <a
+                            href="https://www.dropbox.com/scl/fo/ip4mxw1c24t2qehvb16cw/h?rlkey=6gpkhjc5lgpec0nt59ov1wl4h&dl=0">The
+                            Shear Wave Velocity Profiles Database</a> DOI:
+                        10.4231/D3JH3D27N
+                    </li>
+                    <li class="list-group-item">
+                        <span>262</span> SAC Steel Project Database DOI:
+                        10.4231/D3FQ9Q536
+                    </li>
+                    <li class="list-group-item">
+                        <span>263</span> <a
+                            href="https://www.dropbox.com/sh/fafcyvdzcd0grqx/AAD7SCFPp-8Z3C2SIe4AS03Na?dl=0">The Haiti
+                            Earthquake Database</a> DOI:
+                        10.4231/D3P843W0H
+                    </li>
+                    <li class="list-group-item">
+                        <span>264</span> <a
+                            href="https://www.dropbox.com/scl/fo/7dq6dwu18ugi7n67fx6vm/h?rlkey=z43bsm0k53ybk9vpuuaex5wbk&dl=0">Projects
+                            Suitable for SHM and Model Updating Research</a> DOI:
+                        10.4231/D3ZW18T26
+                    </li>
+                    <li class="list-group-item">
+                        <span>265</span> <a
+                            href="https://www.dropbox.com/scl/fo/bhn3qox1tqycp3txxwrx1/h?rlkey=y9yd64ysvmtow1nohkhhpzr1k&dl=0">The
+                            ACI Publications Database</a> DOI:
+                        10.4231/D3SX64911
+                    </li>
+                    <li class="list-group-item">
+                        <span>266</span> <a
+                            href="https://www.dropbox.com/scl/fo/4nspxeku2m0yr0vgpl2d7/h?rlkey=ti6l1zob2vath5etk5z9z7ija&dl=0">The
+                            Journal of Earthquake Engineering Database</a> DOI:
+                        10.4231/D3KH0DZ60
+                    </li>
+                    <li class="list-group-item">
+                        <span>268</span> <a
+                            href="https://www.dropbox.com/sh/smi8m0jllfn4kof/AACvOhV3wBQkAZnYBpxzG45Ga?dl=0">CENSEIS-
+                            Centrifuge and Full-scale Modeling of Seismic Pore Pressures in Sands</a> DOI:
+                        10.4231/D3GF0MX4F
+                    </li>
+                    <li class="list-group-item">
+                        <span>269</span> <a
+                            href="https://www.dropbox.com/sh/34np0xp6ne3ay9m/AAD8nt9hCrxMhp7K3ZI01t3Za?dl=0">FLIQ-Foundation
+                            and Ground Performance in Liquefaction Experiments</a> DOI:
+                        10.4231/D3M61BQ73
+                    </li>
+                    <li class="list-group-item">
+                        <span>270</span> <a
+                            href="https://www.dropbox.com/sh/bfpov9xpthxmgwt/AADF3V8kxVaERQ3ihw9WnO8Za?dl=0">PRESHAKE-Centrifuge
+                            modeling of the effect of seismic preshaking on the liquefaction resistance of sands</a>
+                        DOI:
+                        10.4231/D38K74X78
+                    </li>
+                    <li class="list-group-item">
+                        <span>271</span> <a
+                            href="https://www.dropbox.com/scl/fo/i4lzahoi1q8d0m1u0m0vo/h?rlkey=ijc64eqt4osiomyrz7iwhgqru&dl=0">Priority
+                            Index Database-Medellin (Colombia)</a>
+                        DOI:
+                        10.17603/DS2PQ14
+                    </li>
+                    <li class="list-group-item">
+                        <span>272</span> <a
+                            href="https://www.dropbox.com/scl/fo/hqw90aw3blypxbldkpvsq/h?rlkey=h9njj1isk3axy9tyubky0nb2l&dl=0">The
+                            KiK-net database processed using an automated ground motion processing protocol</a>
+                        DOI:
+                        10.17603/DS2K081
+                    </li>
+                    <li class="list-group-item">
+                        <span>14288</span> <a
+                            href="https://www.dropbox.com/scl/fo/4pgjvlkz9m1xze683edxr/h?rlkey=foj6hcvzcsyyos2c3fu5t0fc1&dl=0">Ottawa
+                            F-65 Sand Data from Ana Maria Parra Bastidas</a>
+                        DOI:
+                        10.17603/DS2MW2R
+                    </li>
+                    <li class="list-group-item">
+                        <span>14316</span> Leap Soil Properties and Element Test Data
+                        DOI:
+                        10.17603/DS2WC7W
+                    </li>
+                    <li class="list-group-item">
+                        <span>14312</span> <a
+                            href="https://www.dropbox.com/scl/fo/vjf0g8kosmfo5u8qpi6g6/h?rlkey=dds6tdr4oyqggbs0cql68f2me&dl=0">LEAP
+                            Centrifuge Test and Numerical Simulation Specifications</a>
+                        DOI:
+                        10.17603/DS2159T
+                    </li>
+                    <li class="list-group-item">
+                        <span>14342</span> <a
+                            href="https://www.dropbox.com/sh/z5263oyx9hm4v37/AAAeVcD_0DQM2Z_sLdqno1Pra?dl=0">Chilean
+                            Strong Ground Motion</a>
+                        DOI:
+                        10.17603/DS2N30J
+                    </li>
+                    <li class="list-group-item">
+                        <span>14307</span> <a
+                            href="https://www.dropbox.com/scl/fo/wqfh23nrvnwv742a2hovx/h?rlkey=ee81g2ii486b7n3zs8955fwvh&dl=0">FoRCy:
+                            Rocking Shallow Foundation Performance in Slow Cyclic and Monotonic Experiments</a>
+                        DOI:
+                        10.13019/t0cq-qf64
+                    </li>
+                </ul>
+            </div>
+            <div class="container mt-5">
+                <h3 class="mb-3">Data Related to Work at Purdue (Available also on <a
+                        href="https://www.designsafe-ci.org/" class="link-dark">Design Safe</a>)</h3>
+                <ul class="list-group mt-3 mb-3">
+                    <li class="list-group-item">
+                        <span>267</span> Behavior of Ten Story Reinforced Concrete Walls Subjected to Earthquake Motions
+                        (NEES-2010-0915)
+                    </li>
+                    <li class="list-group-item">
+                        <span>271</span> Earthquake-Simulation Tests of a Ten-Story RC Frame with a Discontinued
+                        First-Level Beam (NEES-2011-1061)
+                    </li>
+                    <li class="list-group-item">
+                        <span>278</span> Shear Strength Decay in Reinforced Concrete Columns Subjected to Large
+                        Deflection Reversals (NEES-2010-0905)
+                    </li>
+                    <li class="list-group-item">
+                        <span>281</span> Experimental Modelling and Analysis of Three One-Tenth-Scale Reinforced
+                        Concrete Frame-Wall Structure (NEES-2011-1053)
+                    </li>
+                    <li class="list-group-item">
+                        <span>285</span> Experiments to Study the Earthquake Response of Reinforced Concrete Frames with
+                        Setbacks (NEES-2011-1068)
+                    </li>
+                    <li class="list-group-item">
+                        <span>290</span> Response of Ten Story, Reinforced Concrete Model Frames to Simulated
+                        Earthquakes (NEES-2011-1072)
+                    </li>
+                    <li class="list-group-item">
+                        <span>298</span> Experiments to Study Earthquake Response of R/C Structures with Stiffness
+                        Interruptions (NEES-2011-1058)
+                    </li>
+                    <li class="list-group-item">
+                        <span>299</span> Experimental Study of Frame-Wall Interaction in RC Structures Subjected to
+                        Strong Earthquake Motions (NEES-2011-1019)
+                    </li>
+                    <li class="list-group-item">
+                        <span>350</span> Experiments to Study Seismic Drift of Reinforced Concrete Structures
+                        (NEES-2011-1065)
+                    </li>
+                    <li class="list-group-item">
+                        <span>353</span> <a
+                            href="https://www.dropbox.com/sh/yj9lco1r9zmppfh/AAA5o7CNjFfBKlB-w5SQ1N2Ma?dl=0">Experimental
+                            Investigation of a Full-Scale Flat-Plate RC Structure Subjected to Cyclic Lateral Loading
+                            (NEES-2008-0625)</a>
+                    </li>
+                    <li class="list-group-item">
+                        <span>359</span> Small-Amplitude Vibration Tests of a Full-Scale Reinforced Concrete Flat-Plate
+                        Structure (NEES-2014-1247)
+                    </li>
+                    <li class="list-group-item">
+                        <span>383</span> NSF RAPID: Collection of Damage Data Following Haiti Earthquake
+                        (NEES-2010-0872)
+                    </li>
+                    <li class="list-group-item">
+                        <span>387</span> The Effect of Scale on the Resistance of Reinforced Concrete Beams to Shear
+                        (NEES-2012-1169)
+                    </li>
+                    <li class="list-group-item">
+                        <span>427</span> An Experimental and Analytical Study of the Earthquake Response of R/C Frames
+                        with Yielding Columns (NEES-2011-1063)
+                    </li>
+                    <li class="list-group-item">
+                        <span>452</span> Seismic Response of Structural Walls with Geometric and Reinforcement
+                        Discontinuities (NEES-2011-1050)
+                    </li>
+                    <li class="list-group-item">
+                        <span>456</span> <a
+                            href="https://www.dropbox.com/sh/7i53499u8n8tw5x/AACs4py8YrpDBEkw3iwx-i8Wa?dl=0">Seismic
+                            Performance of 5 RC Buildings w Structural Walls at Tohoku Univ. during the Tohoku EQ of
+                            2011 (NEES-2012-1122)</a>
+                    </li>
+                    <li class="list-group-item">
+                        <span>477</span> Experiments and Analyses to Study the Seismic Response of RC Frame-Wall
+                        Structures with Yielding Columns(NEES-2011-1057)
+                    </li>
+                    <li class="list-group-item">
+                        <span>505</span> Reinforced Concrete Columns Reinforced with High-Strength Steel
+                    </li>
+                    <li class="list-group-item">
+                        <span>516</span> Reinforced Concrete Columns Reinforced with High-Strength Steel
+                        (NEES-2010-0904)
+                    </li>
+                    <li class="list-group-item">
+                        <span>538</span> Mitigation of Collapse Risk in Vulnerable Concrete Buildings (NEES-2008-0637)
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-body-secondary py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#topNavigation">Back to top</a>
+            </p>
+            <p class="mb-1">Get in touch at <a
+                    href="mailto:santiago.pujol@canterbury.ac.nz">santiago.pujol@canterbury.ac.nz</a></p>
+            <p class="mb-0">Please use the subject line: datacenterhub inquiry</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

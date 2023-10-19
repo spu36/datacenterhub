@@ -1,137 +1,141 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>datacenterhub (under construction)</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <header class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom">  
-        <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Main navigation">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="/">databasehub</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Offcanvas navigation -->
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">databasehub</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Database Info Pages
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="#">NEES Databases</a></li>
-                      <li><a class="dropdown-item" href="#">Post-NEES Databases</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>datacenterhub (under construction)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
 
-      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-        <div class="col-lg-6 px-0">
-          <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-          <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <!-- Navigation / Header Section -->
+  <header data-bs-theme="dark">
+    <!-- Offcanvas navigation -->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+      aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">databasehub</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="nees.html">NEES Databases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" ref="post-nees.html">Post-NEES Databases</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Top navigation -->
+    <div class="navbar navbar-dark bg-dark shadow-sm" id="topNavigation">
+      <div class="container">
+        <a href="/" class="navbar-brand d-flex align-items-center">
+          <strong>databasehub</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <div class="jumbotron jumbotron-fluid" id="home-jumbotron">
+      <div class="container">
+        <div class="col-md-8 p-lg-8 mx-auto py-5">
+          <h1 class="display-3 fw-bold">Preserving Earthquake Engineering Data</h1>
+          <h3 class="fw-normal mb-3">Established at Purdue University</h3>
         </div>
       </div>
+    </div>
 
-      <h1>databasehub</h1>
-
-      <div class="col-lg-8 px-0">
-        <p>This website is a 'static' version of the interactive site that was sponsored by NSF from 2014 to 2021 (grants 1443027 and 1724728)</p>
-        <p>DOIs listed here are not "working DOIs." They are temporary DOIs. Nevertheless, all the data pertaining to each DOI are accessible through the links provided here. Users are welcome to transfer their data and DOIs to <a href='https://www.designsafe-ci.org/facilities/virtual-office-hours/'>DesignSafe</a>.</p>
+    <div class="container my-5">
+      <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+        <h1 class="text-body-emphasis text-uppercase text-secondary">About Us</h1>
+        <p class="col-lg-8 mx-auto mb-6">
+          www.datacenterhub.org was established at Purdue University in 2014 to preserve data and digital infrastructure
+          that was available after the Network for Earthquake Engineering Simulation (NEES) was terminated by National
+          Science Foundation NSF<br><br>
+          This site is made possible by University of Canterbury, New Zealand, and serves as historical repository of
+          collections of files once housed at datacenterhub without the interactive tools that were available on that
+          site
+        </p>
+        <img src="images/UniversityOfCanterbury.jpg" id="univCanterburyLogo">
       </div>
+    </div>
 
-      <div class="container my-5">
-        <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
-          <h1 class="text-body-emphasis text-uppercase text-secondary">About databasehub</h1>
-          <p class="col-lg-8 mx-auto mb-6">
-            www.datacenterhub.org was established at Purdue University in 2014 to preserve data and digital infrastructure that was available after the Network for Earthquake Engineering Simulation (NEES) was terminated by National Science Foundation NSF<br><br>
-            This site is made possible by University of Canterbury, New Zealand, and serves as historical repository of collections of files once housed at datacenterhub without the interactive tools that were available on that site
-          </p>
-        </div>
-      </div>
-
-      <div class="container marketing">  
-        <div class="row">
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container marketing">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col-lg-4">
-            <h3 class="fw-normal text-uppercase"><a href="neeshub.html" class="text-secondary">Neeshub Databases</a></h3>
             <div class="img_wrapper">
               <img src="images/nees_logo.jpg" class="rounded-rectangle img-thumbnail">
             </div>
+            <h3 class="fw-normal text-uppercase">
+              <a href="nees.html" class="text-secondary">Neeshub Databases</a>
+            </h3>
             <p>Databases that were uploaded to NEESHub</p>
           </div>
-
           <div class="col-lg-4">
-            <h3 class="fw-normal text-uppercase"><a href="post-nees.html" class="text-secondary">Post-Nees CE Databases</a></h3>
             <div class="img_wrapper">
               <img src="images/RC_Structural_Walls_with_Lap_Splices.jpg" class="rounded-rectangle img-thumbnail">
             </div>
+            <h3 class="fw-normal text-uppercase">
+              <a href="post-nees.html" class="text-secondary">Post-Nees CE Databases</a>
+            </h3>
             <p>CE Databases uploaded after NEESHub</p>
           </div>
-
           <div class="col-lg-4">
-            <h3 class="fw-normal text-uppercase text-secondary">Other Databases</h3>
             <div class="img_wrapper">
               <img src="images/SolarPanel.png" class="rounded-rectangle img-thumbnail">
             </div>
-            <p>For databases not related to Civil Engineering (CE), please contact us. We can help you access a backup with data uploaded up to 2019</p>
+            <h3 class="fw-normal text-uppercase text-secondary">Other Databases</h3>
+            <p>For databases not related to Civil Engineering (CE), please contact us. We can help you access a backup
+              with data uploaded up to 2019</p>
           </div>
         </div>
       </div>
-      
-        
-
-        
-
-      <h2>Guides</h2>
-      <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-      <ul class="icon-list">
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap quick start guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/webpack/">Bootstrap Webpack guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/parcel/">Bootstrap Parcel guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/vite/">Bootstrap Vite guide</a></li>
-        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/contribute/">Contributing to Bootstrap</a></li>
-      </ul>
-
-      <hr class="mt-5 mb-4">
-
-      <p class="text-muted">
-        Get in touch at <a href = "mailto:santiago.pujol@canterbury.ac.nz">santiago.pujol@canterbury.ac.nz</a><br>
-        Please use the subject line: datacenterhub inquiry
-      </p>
     </div>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="text-body-secondary py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#topNavigation">Back to top</a>
+      </p>
+      <p class="mb-1">Get in touch at <a
+          href="mailto:santiago.pujol@canterbury.ac.nz">santiago.pujol@canterbury.ac.nz</a></p>
+      <p class="mb-0">Please use the subject line: datacenterhub inquiry</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
