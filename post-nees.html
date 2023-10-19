@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>datacenterhub (under construction)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- Navigation / Header Section -->
+    <header data-bs-theme="dark">
+        <!-- Offcanvas navigation -->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">databasehub</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="nees.html">NEES Databases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="post-nees.html">Post-NEES Databases</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Top navigation -->
+        <div class="navbar navbar-dark bg-dark shadow-sm" id="topNavigation">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <strong>databasehub</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="jumbotron jumbotron-fluid" id="post-nees-jumbotron">
+            <div class="container">
+                <div class="py-5">
+                    <h1 class="display-3 fw-bold">POST-NEES<br>CE Databases</h1>
+                    <h3 class="fw-normal mb-3">CE Databases uploaded after NEESHub</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-body-tertiary">
+            <div class="container">
+                <h3 class="mb-3">Highlights</h3>
+                <p class="lead">NOTE: Please see the <a
+                        href="https://www.dropbox.com/s/w5v14fldqtjh7sk/Data%20Model.txt?dl=0" class="link-dark">"data
+                        model" or scheme</a> used to organize the data in each
+                    dataset.</p>
+                <ul class="list-group mt-3 mb-3">
+                    <li class="list-group-item">
+                        <span>113</span> Compressive Strength of Unreinforced Struts. DOI 10.7277/NCAH-6128
+                    </li>
+                    <li class="list-group-item">
+                        <span>137</span> <a
+                            href="https://www.dropbox.com/sh/cltg6na5senqfyd/AADp3XbBbzpsGxM08WLLPsX4a?dl=0">Building
+                            Surveys after Earthquakes</a> DOI:
+                        DOI 10.7277/368Q-T523 (2015 Nepal, 2016 Ecuador, 2016 Taiwan, and 2017 South Korea)
+                    </li>
+                    <li class="list-group-item">
+                        <span>189</span> RC Structural Walls With Lap Splices. DOI 10.7277/B56D-1P70
+                    </li>
+                    <li class="list-group-item">
+                        <span>208</span> An Experimental Study of the Response of RC Frames and Frames with Masonry
+                        Infill Walls to Simulated Earthquakes. DOI 10.7277/W61K-FB26
+                    </li>
+                    <li class="list-group-item">
+                        <span>247</span> Unreinforced Concrete Strut Database. DOI 10.7277/6E4J-R892
+                    </li>
+                    <li class="list-group-item">
+                        <span>250</span> Drift Demands on Reinforced Concrete Structures Subjected to Strong Ground
+                        Motions. DOI 10.7277/FP6Q-8J30
+                    </li>
+                    <li class="list-group-item">
+                        <span>258</span> Experimental Investigation of a Full-Scale Flat-Plate Reinforced Concrete
+                        Structure. DOI 10.7277/ST6M-V86
+                    </li>
+                    <li class="list-group-item">
+                        <span>272</span> An Investigation of the Unit Shear Strength of Geometrically Scaled Reinforced
+                        Concrete Beams. DOI 10.7277/SVAC-1590
+                    </li>
+                    <li class="list-group-item">
+                        <span>273</span> Cyclic Tests of Steel Reinforced Concrete (SRC) Walls. DOI 10.7277/HPQP-GV36
+                    </li>
+                    <li class="list-group-item">
+                        <span>287</span> BRI Wall Database. DOI 10.7277/D1S6-YH30
+                    </li>
+                    <li class="list-group-item">
+                        <span>292</span> Mechanisms and Implications of Time-Dependent Changes in the State and
+                        Properties of Recently Liquefied Sands. DOI 10.7277/C8VN-9225
+                    </li>
+                    <li class="list-group-item">
+                        <span>293</span> Experimental Study of Seismic Response of Reinforced Concrete Setback
+                        Buildings. DOI 10.7277/29M1-HG59
+                    </li>
+                    <li class="list-group-item">
+                        <span>296</span> <a
+                            href="https://www.dropbox.com/sh/cltg6na5senqfyd/AADp3XbBbzpsGxM08WLLPsX4a?dl=0">2017 Pohang
+                            Earthquake</a> DOI 10.7277/04XV-FA16
+                    </li>
+                    <li class="list-group-item">
+                        <span>309</span> Engineering in the City of the Century
+                    </li>
+                    <li class="list-group-item">
+                        <span>318</span> ACI 445B Shear Wall Database
+                    </li>
+                    <li class="list-group-item">
+                        <span>330</span> High Strength Steel Bars in RC Columns
+                    </li>
+                    <li class="list-group-item">
+                        <span>332</span> <a
+                            href="https://www.dropbox.com/sh/3nla3osbtvis6b1/AAAoDxAMpKpjWvyuPHRCEXn6a?dl=0">Spatial
+                            Distribution of Damage caused by the 1999 earthquakes in Turkeye</a>
+                    </li>
+                    <li class="list-group-item">
+                        <span>343</span> <a
+                            href="https://www.dropbox.com/s/hl6tzesdh6av4yc/343_Sozen_s%20Digital%20Library-010.tgz?dl=0">Mete
+                            Sozen's Digital Library</a>
+                    </li>
+                    <li class="list-group-item">
+                        <span>344</span> The Effect of Maximum Aggregate Size on the Shear Strength of Geometrically
+                        Scaled Reinforced Concrete Beams. DOI 10.7277/GRT4-0X43
+                    </li>
+                    <li class="list-group-item">
+                        <span>345</span> Service Load Deflections in Slabs Reinforced with High Strength Steel
+                    </li>
+                    <li class="list-group-item">
+                        <span>348</span> <a
+                            href="https://www.dropbox.com/sh/cjo34wzy5iw0tez/AAC24GUfFJ9dCSEINLnzGNSha?dl=0">Earthquake
+                            Reconnaissance Slides by Drs. Mete A. Sozen and Nathan M. Newmark</a>
+                    </li>
+                    <li class="list-group-item">
+                        <span>364</span> The Art of Teaching I Engineering Art Lecture Series
+                    </li>
+                    <li class="list-group-item">
+                        <span>366</span> EERI Undergraduate Seismic Design Competition. DOI 10.7277/MST2-J575
+                    </li>
+                    <li class="list-group-item">
+                        <span>368</span> <a
+                            href="https://www.dropbox.com/sh/qhwpnqeaisemqtj/AAA_W9kODyW8B2upkC6HYN6wa?dl=0">Earthquake
+                            Simulation Tests</a>
+                    </li>
+                    <li class="list-group-item">
+                        <span>379</span> Stability of Rocking Structures
+                    </li>
+                    <li class="list-group-item">
+                        <span>407</span> A New Perspective on the Tensile Strength of Lap Splices in Reinforced Concrete
+                        Members
+                    </li>
+                    <li class="list-group-item">
+                        <span>409</span> Database on Performance of High-Rise Reinforced Concrete Buildings in the 2015
+                        Nepal Earthquake
+                    </li>
+                    <li class="list-group-item">
+                        <span>413</span> Response of High-Strength Steel Reinforced Concrete Structures to Simulated
+                        Earthquakes
+                    </li>
+                    <li class="list-group-item">
+                        <span>415</span> Minimum amount of High-Strength Steel Reinforcement in Reinforced Concrete
+                        Elements
+                    </li>
+                    <li class="list-group-item">
+                        <span>416</span> Tests of Continuous Beams with Large Reinforcement Ratios
+                    </li>
+                    <li class="list-group-item">
+                        <span>430</span> Shaking Table Tests of Columns
+                    </li>
+                    <li class="list-group-item">
+                        <span>433</span> Seismic Vulnerability Survey of Undamaged Reinforced Concrete Buildings
+                    </li>
+                    <li class="list-group-item">
+                        <span>435</span> Dynamic Test of a SDOF PXCM System
+                    </li>
+                    <li class="list-group-item">
+                        <span>436</span> ACI 445/fib WG 2.2.3 Punching Shear Test Database 1
+                    </li>
+                    <li class="list-group-item">
+                        <span>437</span> CE 676 - Behavior of Reinforced Concrete Elements
+                    </li>
+                    <li class="list-group-item">
+                        <span>438</span> Steel Bridge Database. DOI 10.7277/1NBV-BD89
+                    </li>
+                    <li class="list-group-item">
+                        <span>441</span> Lamb Wave Mode Decomposition. DOI 10.7277/BATY-5413
+                    </li>
+                    <li class="list-group-item">
+                        <span>454</span> <a
+                            href="https://www.dropbox.com/sh/hsxmx0pw6e1iukz/AACcAsGURgHbEmvkwh6Vx4hIa?dl=0">
+                            Database of low-rise reinforced concrete buildings with earthquake damage</a> DOI
+                        10.7277/ACX0-DG18 (Erzincan 1992, Duzce 1999, Bingol 2003, Peru 2007, Wenchuan 2008, and Haiti
+                        2010)
+                    </li>
+                    <li class="list-group-item">
+                        <span>459</span> Tests of Reinforced Concrete Structural Walls with Different Opening
+                        Arrangements
+                    </li>
+                    <li class="list-group-item">
+                        <span>462</span> Structural Performance and Corrosion Resistance of Corrosion-Resistant
+                        Reinforcing Bars
+                    </li>
+                    <li class="list-group-item">
+                        <span>473</span> SERIES RC Walls Database
+                    </li>
+                    <li class="list-group-item">
+                        <span>487</span> Experimental and Analytical Investigation of Non-rectangular Walls under
+                        Multidirectional Loads. DOI 10.7277/W47H-6055
+                    </li>
+                    <li class="list-group-item">
+                        <span>503</span> Performance of Masonry Structures in Nepal
+                    </li>
+                    <li class="list-group-item">
+                        <span>504</span> Oaxaca 80
+                    </li>
+                    <li class="list-group-item">
+                        <span>505</span> Reinforced Concrete Columns Reinforced with High-Strength Steel
+                    </li>
+                    <li class="list-group-item">
+                        <span>512</span> International Bridge Contest
+                    </li>
+                    <li class="list-group-item">
+                        <span>534</span> 2016 Taiwan (Meinong) Earthquake
+                    </li>
+                    <li class="list-group-item">
+                        <span>535</span> 2016 Ecuador Earthquake
+                    </li>
+                    <li class="list-group-item">
+                        <span>536</span> Buildings Surveyed after the 2017 Mexico City Earthquakes
+                    </li>
+                    <li class="list-group-item">
+                        <span>537</span> 2015 Nepal Earthquake Building Performance Database
+                    </li>
+                    <li class="list-group-item">
+                        <span>564</span> Dynamic Tests of An Idealized Long-Period Structure
+                    </li>
+                    <li class="list-group-item">
+                        <span>575</span> Database of Numerical Models of Structures Subjected to Earthquake Simulations
+                    </li>
+                    <li class="list-group-item">
+                        <span>659</span> <a
+                            href="https://www.dropbox.com/sh/9qamnwqhspiw1i6/AADT--GVkpa17rOUbvLXONmVa?dl=0">
+                            Moment-Curvature Relationship Program - FLECHA</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container mt-5">
+                <h3 class="mb-3">Other</h3>
+                <ul class="list-group mt-3 mb-3">
+                    <li class="list-group-item">
+                        <span>624</span> Chloride ion concentration
+                    </li>
+                    <li class="list-group-item">
+                        <span>623</span> Corrosion depth of reinforcement
+                    </li>
+                    <li class="list-group-item">
+                        <span>622</span> Cracking width
+                    </li>
+                    <li class="list-group-item">
+                        <span>621</span> Corrosion expansion crack time
+                    </li>
+                    <li class="list-group-item">
+                        <span>620</span> Carbonation depth
+                    </li>
+                    <li class="list-group-item">
+                        <span>618</span> Chloride diffusion coefficient of concrete by RCM at 28 days
+                    </li>
+                    <li class="list-group-item">
+                        <span>611</span> Compressive strength of concrete at 28 daysd
+                    </li>
+                </ul>
+            </div>
+            <div class="container mt-5">
+                <h3 class="mb-3">Zenodo Dataset</h3>
+                <ul class="list-group mt-3 mb-3">
+                    <li class="list-group-item">
+                        <span>6954967</span> <a href="https://zenodo.org/record/6954967">
+                            Earthquake Response of Reinforced Concrete Frames with Infill and Active External
+                            Confinement: Tests and Dataset</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-body-secondary py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#topNavigation">Back to top</a>
+            </p>
+            <p class="mb-1">Get in touch at <a
+                    href="mailto:santiago.pujol@canterbury.ac.nz">santiago.pujol@canterbury.ac.nz</a></p>
+            <p class="mb-0">Please use the subject line: datacenterhub inquiry</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

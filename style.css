@@ -45,6 +45,15 @@
   height: 400px;
 }
 
+#post-nees-jumbotron {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.25),
+      rgba(77, 79, 79, 0.45)),
+    url(images/SchultzHeader.png);
+  background-position: center;
+  height: 350px;
+}
+
 #univCanterburyLogo {
   width: 150px;
 }
