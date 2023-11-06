@@ -1,0 +1,64 @@
+.marketing .col-lg-4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-top: 10px;
+}
+
+.marketing .col-lg-4 .img_wrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.marketing .col-lg-4 img {
+  width: 100%;
+}
+
+.jumbotron {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white !important;
+  height: 350px;
+}
+
+#home-jumbotron {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.25),
+      rgba(77, 79, 79, 0.45)),
+    url(images/ecuador_EQ_cover_photo.jpg);
+  background-position: center;
+}
+
+#nees-jumbotron {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.25),
+      rgba(77, 79, 79, 0.45)),
+    url(images/MexicoCityHeader.jpg);
+  background-position: center;
+  height: 400px;
+}
+
+#post-nees-jumbotron {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.25),
+      rgba(77, 79, 79, 0.45)),
+    url(images/SchultzHeader.png);
+  background-position: center;
+  height: 350px;
+}
+
+#univCanterburyLogo {
+  width: 150px;
+}
+
+.list-group .list-group-item span {
+  font-weight: bold;
+  margin-right: 15px;
+}
