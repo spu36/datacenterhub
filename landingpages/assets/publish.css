@@ -1,0 +1,218 @@
+.section .header-container h2,
+.section .header-container h4 {
+    margin-top: 0;
+}
+
+.section .details-container {
+    padding-top: 2em;
+}
+
+.buttons-panel {
+    text-align: right;
+    padding: 1em 5em;
+}
+
+.required:after {
+    content: "*";
+    color: red;
+    margin: 0px 5px;
+}
+
+.editable textarea.edit {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: var(--deeds-lighter-gray);
+}
+
+.editable textarea.large {
+    width: 100%;
+    height: 100px;
+}
+
+.btn.large {
+    font-size: 1.8em;
+    font-weight: bold;
+    width: 100%;
+    margin: 0px 0px 15px;
+}
+
+.col.emphasis {
+    font-size: 1.5em;
+}
+
+.col.emphasis h4 {
+    font-size: 1.3em;
+}
+
+#field-licenses .description {
+    min-height: 100px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+#field-abstract {
+    white-space: pre-wrap;
+}
+
+.dataset-access-control .description {
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+
+.dataset-access-control .group-select > * {
+    margin: 5px 30px 5px 0px;
+}
+
+.dataset-access-control .group-select > select {
+    width: 350px;
+}
+
+.dataset-access-control .group-select > i {
+    cursor: pointer;
+}
+
+.dataset-access-control .group-select > div a {
+    margin: 15px 65px 0px 0px;
+}
+
+#field-cover-image {
+    width: 100%;
+}
+
+#field-cover-image.editable {
+    background-color: var(--deeds-color-gray-lighter);
+    font-size: 1.8em;
+    text-align: center;
+    width: 100%;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+#field-cover-image .image-container i {
+    position: relative;
+    left: 30px;
+}
+
+#field-cover-image .image-container {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#field-cover-image .image-container img {
+    min-width: 50%;
+    max-width: 75%;
+}
+
+.list-type-field ol {
+    display: inline-block;
+    list-style: none;
+}
+
+.list-type-field li {
+    float: left;
+    margin: 5px 20px 5px 0px;
+    padding: 2px 25px;
+    background-color: var(--deeds-color-hubzero-blue);
+    color: var(--deeds-color-white);
+}
+
+.list-type-field.editable {
+    cursor: pointer;
+}
+
+.list-type-field.editable li:hover:after {
+    content: "\f2ed";
+    font-weight: 400;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    margin: 2px 0px 0px 8px;
+}
+
+.list-type-field.editable input.add-new {
+    margin-top: 5px;
+    padding: 2px 0px;
+    vertical-align: top;
+}
+
+.list-type-field.editable i.add-new {
+    margin-top: 5px;
+    font-size: 2em;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+#publication-preview {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* quick warning message color style */
+.warning-color {
+    color: var(--deeds-color-red);
+}
+
+.info-color {
+    color: var(--deeds-color-hubzero-blue);
+}
+
+/* Quick modal message styling (mostly for jQuery UI dialog message) */
+.modal-message {
+    display: flex;
+}
+
+.modal-message-icons {
+    margin: 1em 0;
+}
+
+.modal-message-icons i {
+    font-size: 2em;
+}
+
+.modal-message p {
+    font-size: 1em;
+    padding: 0px 20px;
+}
+
+.no-datasets {
+    text-align: center;
+}
+
+.no-datasets h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: inherit;
+    margin: 20px 0px;
+}
+
+.compactlist {
+    list-style: none;
+    margin: 0;
+}
+
+.compactlist li.dataset {
+    border: none;
+    margin: 5px;
+    padding: 0.6em 2.5em;
+    position: relative;
+    display: inline-block;
+}
+
+.compactlist .dataset:before {
+    content: "\f022";
+    font-family: "Fontcons";
+    position: absolute;
+    top: 0.6em;
+    left: 0.6em;
+    font-size: 1.2em;
+    line-height: 1;
+    color: #ccc;
+}
+
+.compactlist .dataset:hover:before {
+    color: #999;
+}
