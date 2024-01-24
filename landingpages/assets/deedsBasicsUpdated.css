@@ -1,0 +1,576 @@
+/**
+ * assets/css/deedsBasics.css
+ * By: Andres Bejarano <abejara@purdue.edu>
+ *
+ * Contains the basic styles for the DEEDS components. The file must be used in all task view files.
+ * Specific id and class selectors are prefixed with 'deeds' in order to differentiate them from 
+ * HubZero's styles and plug-ins styles.
+ *
+ * If a style is required to be added/edited please contact the project software leader before 
+ * editing this file (several components use it).
+ */
+
+/**
+ * Define the variables to be used in the styles. Blue palette from 
+ * http://paletton.com/#uid=13w0u0kvMzEj-G6p0AQ-uqtDMkN
+ */
+:root
+{
+    /* 
+    Define the color variables used by HubZero
+    DO NOT USE THIS, WE KEEP THEM FOR LEGACY PURPOSES ONLY
+    */
+    --deeds-color-hubzero-blue-lighter: #5395c3;
+    --deeds-color-hubzero-blue-light: #307eb4;
+    --deeds-color-hubzero-blue: #0c6aae;
+    --deeds-color-hubzero-blue-dark: #075287;
+    --deeds-color-hubzero-blue-darker: #05406a;
+    --deeds-color-hubzero-gray: #eaedf0;
+    
+    /* 
+    Define the color variables used by the DEEDS tabs
+    DO NOT USE THIS, WE KEEP THEM FOR LEGACY PURPOSES ONLY
+    */
+    --deeds-color-gray-lightest: #eeeeee;
+    --deeds-color-gray-lighter: #dddddd;
+    --deeds-color-gray-light: #cdcdcd;
+    --deeds-color-gray: #bbbbbb;
+    --deeds-color-gray-dark: #888888;
+    --deeds-color-gray-darker: #555555;
+    --deeds-color-tabs-orange: #ffa500;
+    
+    /* 
+    Define some generic colors
+    DO NOT USE THIS, WE KEEP THEM FOR LEGACY PURPOSES ONLY
+    */
+    --deeds-color-black: #666666;
+    --deeds-color-green: #91e984;
+    --deeds-color-red: #ff0000;
+    --deeds-color-white: #ffffff;
+    
+    /* Short names */
+    --deeds-lighter-blue: #5395c3;
+    --deeds-light-blue: #307eb4;
+    --deeds-blue: #0c6aae;
+    --deeds-dark-blue: #075287;
+    --deeds-darker-blue: #05406a;
+    --deeds-lightest-gray: #eeeeee;
+    --deeds-lighter-gray: #dddddd;
+    --deeds-light-gray: #cdcdcd;
+    --deeds-gray: #bbbbbb;
+    --deeds-dark-gray: #888888;
+    --deeds-darker-gray: #555555;
+    --deeds-orange: #ffa500;
+    --deeds-black: #666666;
+    --deeds-green: #91e984;
+    --deeds-lighter-red:#ff6464;
+    --deeds-light-red:#ff3939;
+    --deeds-red: #ff0000;
+    --deeds-dark-red:#c60000;
+    --deeds-darker-red:#9b0000;
+    --deeds-lighter-yellow:#ffff64;
+    --deeds-light-yellow:#ffff39;
+    --deeds-yellow:#ffff00;
+    --deeds-dark-yellow:#c6c600;
+    --deeds-darker-yellow:#9b9b00;
+    --deeds-white: #ffffff;
+}
+
+/**
+ * +------------------------------------------------------------------------------------------+
+ * | Main container styles                                                                    |
+ * | The style for the DEEDS main container of the page. Since there are DEEDS tabs above the |
+ * | container it is added the top border line for separating the tabs from the container.    |
+ * +------------------------------------------------------------------------------------------+
+ */
+#deedsMainContainer
+{
+    border-top: 1px solid var(--deeds-lighter-gray);
+    padding: 1em;
+    font-size: 1em;
+}
+
+/**
+ * Redefine the style for the h3 tag.
+ */
+#deedsMainContainer h3
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/**
+ * +------------------------------------------------------------------------+
+ * | Styles for buttons                                                     |
+ * | The style for a DEEDS Data button. It works with <button> and <a> tags |
+ * +------------------------------------------------------------------------+
+ */
+.deedsBtn 
+{
+    background: var(--deeds-color-white);
+    background-image: -webkit-linear-gradient(top, var(--deeds-white), var(--deeds-lighter-blue));
+    background-image: -moz-linear-gradient(top, var(--deeds-white), var(--deeds-lighter-blue));
+    background-image: -ms-linear-gradient(top, var(--deeds-white), var(--deeds-lighter-blue));
+    background-image: -o-linear-gradient(top, var(--deeds-white), var(--deeds-lighter-blue));
+    background-image: linear-gradient(to bottom, var(--deeds-white), var(--deeds-lighter-blue));
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    border-color:var(--deeds-white);
+    border-style:solid;
+    color: var(--deeds-blue) !important;
+    margin-left:0.2em;
+    margin-right:0.2em;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.deedsBtn:hover 
+{
+    background: var(--deeds-lighter-blue);
+    background-image: -webkit-linear-gradient(top, var(--deeds-lighter-blue), var(--deeds-blue));
+    background-image: -moz-linear-gradient(top, var(--deeds-lighter-blue), var(--deeds-blue));
+    background-image: -ms-linear-gradient(top, var(--deeds-lighter-blue), var(--deeds-blue));
+    background-image: -o-linear-gradient(top, var(--deeds-lighter-blue), var(--deeds-blue));
+    background-image: linear-gradient(to bottom, var(--deeds-lighter-blue), var(--deeds-blue));
+    color: var(--deeds-white) !important;
+    text-decoration: none;
+}
+
+.deedsDisabledBtn
+{
+    background: var(--deeds-color-gray);
+    background-image: -webkit-linear-gradient(top, var(--deeds-lighter-gray), var(--deeds-dark-gray));
+    background-image: -moz-linear-gradient(top, var(--deeds-lighter-gray), var(--deeds-dark-gray));
+    background-image: -ms-linear-gradient(top, var(--deeds-lighter-gray), var(--deeds-dark-gray));
+    background-image: -o-linear-gradient(top, var(--deeds-lighter-gray), var(--deeds-dark-gray));
+    background-image: linear-gradient(to bottom, var(--deeds-lighter-gray), var(--deeds-dark-gray));
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    border-color:var(--deeds-white);
+    border-style:solid;
+    color: var(--deeds-lightest-gray) !important;
+    cursor: default;
+    margin-left:0.2em;
+    margin-right:0.2em;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.deedsBtnHolder
+{
+    margin-bottom:1em;
+    margin-top:1em;
+    text-align: center;
+}
+
+
+
+/**
+ * +---------------------------------------------------------------------------------------------+
+ * | Styles for tabs                                                                             |
+ * | They are based on the Responsive CSS Tabs example in https://codepen.io/oknoblich/pen/tfjFl |
+ * +---------------------------------------------------------------------------------------------+
+ */
+.deedsTabs 
+{
+    
+}
+
+.deedsTabs section 
+{
+    display: none;
+    border: 1px solid var(--deeds-lighter-gray);
+    padding:1em;
+}
+
+.deedsTabs > input 
+{
+    display: none;
+}
+
+.deedsTabs > label, 
+.deedsTabs > a
+{
+    background-color:var(--deeds-lightest-gray);
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--deeds-lighter-gray);
+    color: var(--deeds-gray);
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.25em;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.deedsTabs > label:before,
+.deedsTabs > a:before 
+{
+    /*font-family: fontawesome;*/
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.deedsTabs > label:hover,
+.deedsTabs > a:hover
+{
+    color: var(--deeds-dark-gray);
+    cursor: pointer;
+}
+
+.deedsTabs label.active, 
+.deedsTabs a.active,
+.deedsTabs input:checked + label
+{
+    background-color:var(--deeds-white);
+    border: 1px solid var(--deeds-lighter-gray);
+    border-bottom: 1px solid var(--deeds-white);
+    border-top: 2px solid var(--deeds-orange);
+    color: var(--deeds-darker-gray);
+}
+
+/*
+ +-------------------------------------+
+ | Styles for forms and input elements |
+ +-------------------------------------+
+*/
+
+.deedsForm .deedsInput
+{
+    width:100%;
+}
+
+.deedsForm textarea
+{
+    resize: none;
+}
+
+.deedsForm fieldset
+{
+    margin:0;
+    padding:0;
+}
+
+.deedsForm hr 
+{
+    margin:0.5em 0 0.5em 0;
+}
+
+.deedsForm .deedsFormShortField
+{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width:50%;
+}
+
+.deedsForm .deedsFormShorterField
+{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width:25%;
+}
+
+.deedsForm fieldset, 
+.deedsForm .deedsFormField
+{
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.deedsForm fieldset > legend, 
+.deedsForm .deedsFormShortField > legend, 
+.deedsForm .deedsFormShorterField > legend
+{
+    margin:0 0 -1em 0;
+    font-weight: bold;
+}
+
+.deedsForm .deedsFormField > label, 
+.deedsForm .deedsFormShortField > label , 
+.deedsForm .deedsFormShorterField > label 
+{
+    margin:-1em 0 0 0;
+    padding:0;
+    font-weight:bold;
+}
+
+.deedsForm .deedsFormFieldDescription
+{
+    font-size: 0.9em;
+    font-style: italic;
+    margin:0;
+    padding:0;
+}
+
+.deedsForm .deedsRadioGroup .deedsRadio, 
+.deedsForm .deedsCheckGroup .deedsCheck
+{
+    border: 1px solid var(--deeds-gray);
+    border-radius: 0.5em;
+    display:inline;
+    margin-right:0.5em;
+    padding:0.25em;
+}
+
+.deedsForm .deedsRadioGroup .deedsRadio:hover, 
+.deedsForm .deedsCheckGroup .deedsCheck:hover
+{
+    background-color:var(--deeds-lighter-gray);
+    cursor:pointer;
+}
+
+.deedsForm .deedsRadioGroup input[type="radio"], 
+.deedsForm .deedsRadioGroup input.radio 
+{
+    margin-top:-0.25em;
+    
+}
+
+.deedsForm > a > label > i.fa,
+.deedsForm > a > label > i.fas 
+{
+    margin-right: 10px;
+}
+
+.deedsForm .deedsRequired
+{
+    color: var(--deeds-red);
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: super;
+}
+
+
+/*
+ +----------------------------------------+
+ | Styles for two and three columns views |
+ +----------------------------------------+
+*/
+
+.deedsTwoColumns, 
+.deedsThreeColumns 
+{
+    display:table;
+    width:100%;
+    height:100%;
+}
+
+.deedsTwoColumns .deedsCell
+{
+    display:table-cell;
+    padding:0 0.5em 0 0.5em;
+    width:49%;
+}
+
+.deedsThreeColumns .deedsCell
+{
+    display:table-cell;
+    padding:0 0.5em 0 0.5em;
+    width:33%;
+}
+
+.deedsTwoColumns .deedsSeparator, 
+.deedsThreeColumns .deedsSeparator
+{
+    background-color:var(--deeds-light-gray);
+    display:table-cell;
+    width:0.1%;
+}
+
+
+/*
+ * +-------------------------------------------+
+ * | The styles for the table and its elements |
+ * +-------------------------------------------+
+ */
+ 
+.deedsTable 
+{
+    border: 3px solid var(--deeds-lighter-gray) !important;
+    padding: 0.5em;
+}
+
+.deedsTable  h2
+{
+    background-color: var(--deeds-black);
+    color: var(--deeds-white);
+    font-size: 1.5em;
+    margin: 0 0 0.5em 0;
+    padding: 0.5em;
+}
+
+
+/**
+ * +--------------------+
+ * | The overlay styles |
+ * +--------------------+
+ */
+.deedsOverlay 
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--deeds-white);
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.deedsOverlay .deedsOverlayContent
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -28px 0 0 -25px;
+    text-align: center;
+}
+
+
+/**
+ * +--------------------+
+ * | Styles for dialogs |
+ * +--------------------+
+ */
+ 
+/* Override the style for the dialog titles.*/
+.ui-dialog-titlebar
+{
+    background-color: var(--deeds-dark-gray) !important;
+    color: var(--deeds-white) !important;
+}
+
+/* Override the style for the dialog titles.*/
+.ui-dialog-titlebar .ui-dialog-title
+{
+    font-size:1.25em !important;
+}
+
+.deedsDialog
+{
+    display:table;
+}
+
+.deedsDialog .deedsDialogIcon
+{
+    display:table-cell;
+    width:100px;
+}
+
+.deedsDialog .deedsDialogContent
+{
+    display:table-cell;
+    vertical-align:top;
+}
+
+
+/*
+ * +----------------------------------------------------------------+
+ * | Styles for single line information, warning and error messages |
+ * +----------------------------------------------------------------+
+ */
+
+.deedsError
+{
+    background-color:var(--deeds-lighter-red);
+    border-color:var(--deeds-red);
+    border-style:dashed;
+    border-width:3px;
+    border-radius: 0.5em;
+    color:var(--deeds-white);
+    margin:0.5em 0 0.5em 0;
+    padding:0.5em;
+}
+
+.deedsInfo
+{
+    background-color:var(--deeds-light-blue);
+    border-color:var(--deeds-dark-blue);
+    border-style:dashed;
+    border-width:3px;
+    border-radius: 0.5em;
+    color:var(--deeds-white);
+    margin:0.5em 0 0.5em 0;
+    padding:0.5em;
+}
+
+.deedsWarning
+{
+    background-color:var(--deeds-yellow);
+    border-color:var(--deeds-orange);
+    border-style:dashed;
+    border-width:3px;
+    border-radius: 0.5em;
+    color:var(--deeds-black);
+    margin:0.5em 0 0.5em 0;
+    padding:0.5em;
+}
+
+
+/*
+ * +--------------------------------------------------------------------+
+ * | Styles for dashboard with left navigation menu and right container |
+ * +--------------------------------------------------------------------+
+ */
+
+/*
+The following styles apply to the elements bar in the dashboard.
+*/
+.deedscomp-dashboard .deedscomp-dashboard-content 
+{
+    border-color:var(--deeds-lightest-gray);
+    border-style:solid;
+    border-width:1px;
+    display:table;
+    width:100%;
+}
+
+.deedscomp-dashboard .deedscomp-dashboard-content .deedscomp-dashboard-content-left-menu
+{
+    border-right-color:var(--deeds-lightest-gray);
+    border-right-style:solid;
+    border-right-width:1px;
+    display:table-cell;
+    margin:0;
+    padding:0;
+    vertical-align:top;
+    width:15%;
+}
+
+.deedscomp-dashboard .deedscomp-dashboard-content .deedscomp-dashboard-content-left-menu .deedscomp-dashboard-content-left-menu-item 
+{
+    font-size:1.5em;
+    padding:1.5em 0.5em;
+}
+
+.deedscomp-dashboard .deedscomp-dashboard-content .deedscomp-dashboard-content-left-menu .deedscomp-dashboard-content-left-menu-item:hover
+{
+    background-color:var(--deeds-lighter-gray);
+    cursor:pointer;
+}
+
+.deedscomp-dashboard .deedscomp-dashboard-content .deedscomp-dashboard-content-left-menu .deedscomp-dashboard-content-left-menu-item-selected 
+{
+    background-color:var(--deeds-lightest-gray);
+    border-left-color:var(--deeds-orange);
+    border-left-style:solid;
+    border-left-width:2px;
+} 
+
+.deedscomp-dashboard .deedscomp-dashboard-content .deedscomp-dashboard-content-left-menu .deedscomp-dashboard-content-left-menu-item-selected:hover 
+{
+    background-color:var(--deeds-light-gray);
+}
+
+/*
+*/
+.deedscomp-dashboard .deedscomp-dashboard-content .deedscomp-dashboard-content-elements-container 
+{
+    display:table-cell;
+    margin:0;
+    padding:1em;
+    /*width:85%;*/
+}
