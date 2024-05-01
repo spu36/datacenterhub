@@ -1,13 +1,13 @@
-.marketing .col-lg-4 {
+.marketing {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.marketing .col-lg-4 p {
+.marketing p {
   margin-top: 10px;
 }
 
-.marketing .col-lg-4 .img_wrapper {
+.marketing .img_wrapper {
   width: 200px;
   height: 200px;
   overflow: hidden;
