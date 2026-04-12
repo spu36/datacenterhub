@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="citation_title" content="NEES: ACI 369 Rectangular Column Database">
+  <meta name="citation_date" content="Sep 03, 2015">
+  <meta name="citation_author" content="Wassim Ghannoum, Balaji Sivaramakrishnan, Santiago Pujol, Ann Christine Catlin, Sumudinie Fernando, Nabeel Yoosuf and Ying Wang">
+  <meta name="dc.title" content="NEES: ACI 369 Rectangular Column Database">
+  <meta name="dc.date" content="2015-09-03">
+  <meta name="description" content="NEES: ACI 369 Rectangular Column Database">
+  <title>NEES: ACI 369 Rectangular Column Database</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fbfd;
+      --text: #243746;
+      --muted: #5f7285;
+      --border: #dbe7ef;
+      --accent: #1ea7c9;
+      --accent-2: #17c8be;
+      --heading: #173042;
+      --shadow: 0 18px 42px rgba(23, 48, 66, 0.08);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #eff6fa 0%, #f8fbfd 220px, #f4f7fb 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .page-shell {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      height: 12px;
+      background: linear-gradient(90deg, #27aae1 0%, #00a79d 100%);
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 34px 0 18px;
+    }
+
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid rgba(219, 231, 239, 0.95);
+      border-radius: 26px;
+      box-shadow: var(--shadow);
+      padding: 34px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+      box-shadow: 0 0 0 6px rgba(30, 167, 201, 0.12);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      color: var(--heading);
+      font-size: clamp(2rem, 3vw, 2.75rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .authors {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    .side-panel {
+      background: linear-gradient(180deg, #f7fbfd 0%, #f1f8fb 100%);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+    }
+
+    .cta {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 54px;
+      border-radius: 14px;
+      background: linear-gradient(90deg, #27aae1 0%, #00a79d 100%);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 12px 24px rgba(23, 166, 183, 0.2);
+    }
+
+    .cta:hover {
+      color: #fff;
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .meta-note {
+      margin-top: 14px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .content {
+      padding: 8px 0 48px;
+    }
+
+    .content-card {
+      background: var(--surface);
+      border: 1px solid rgba(219, 231, 239, 0.95);
+      border-radius: 26px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      padding: 18px 24px 0;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #fbfdff 0%, #f8fbfd 100%);
+    }
+
+    .tab {
+      display: inline-flex;
+      align-items: center;
+      padding: 11px 16px;
+      border: 1px solid var(--border);
+      border-bottom: none;
+      border-radius: 14px 14px 0 0;
+      background: #ffffff;
+      color: var(--heading);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .content-inner {
+      padding: 28px 32px 34px;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    .fact {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      min-height: 110px;
+    }
+
+    .fact h3 {
+      margin: 0 0 8px;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+
+    .fact p {
+      margin: 0;
+      color: var(--heading);
+      font-weight: 600;
+    }
+
+    h2 {
+      margin: 30px 0 12px;
+      font-size: 1.5rem;
+      color: var(--heading);
+    }
+
+    h3 {
+      margin: 24px 0 10px;
+      font-size: 1.1rem;
+      color: var(--heading);
+    }
+
+    p { margin: 0 0 16px; }
+
+    .abstract {
+      color: var(--text);
+    }
+
+    .media-block {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      gap: 24px;
+      align-items: start;
+      margin: 24px 0;
+    }
+
+    figure {
+      margin: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(23, 48, 66, 0.06);
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      background: #eaf2f7;
+    }
+
+    figcaption {
+      padding: 14px 16px 16px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      background: #fff;
+    }
+
+    .callout {
+      background: linear-gradient(180deg, #f7fbfd 0%, #ffffff 100%);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px 22px;
+    }
+
+    .citation-box,
+    .tags-box {
+      margin-top: 26px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+    }
+
+    .citation-box p:last-child,
+    .tags-box p:last-child { margin-bottom: 0; }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .tags li {
+      padding: 8px 12px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 0 0 36px;
+    }
+
+    .footer-card {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      background: #173042;
+      color: #d9e6ee;
+      border-radius: 24px;
+      padding: 24px 28px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-card p {
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .media-block,
+      .facts {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card,
+      .content-inner {
+        padding: 24px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container,
+      .footer-card {
+        width: min(100% - 20px, 1120px);
+      }
+
+      .tabs {
+        padding: 14px 14px 0;
+      }
+
+      .content-inner,
+      .hero-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="topbar"></div>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-card">
+            <div class="eyebrow">Database Resource</div>
+            <div class="hero-grid">
+              <div>
+                <h1>NEES: ACI 369 Rectangular Column Database</h1>
+                <p class="authors">By Wassim Ghannoum, Balaji Sivaramakrishnan, Santiago Pujol, Ann Christine Catlin, Sumudinie Fernando, Nabeel Yoosuf and Ying Wang</p>
+              </div>
+              <aside class="side-panel">
+                <a class="cta" href="https://www.dropbox.com/sh/3ts6baor1jwo931/AAAQZxZo8JVSnjWbnizTwUEla?dl=0">View Data</a>
+                <p class="meta-note">Licensed under</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container">
+          <div class="content-card">
+            <div class="tabs">
+              <div class="tab">About</div>
+            </div>
+            <div class="content-inner">
+              <div class="facts">
+                <div class="fact">
+                  <h3>Category</h3>
+                  <p>Databases</p>
+                </div>
+                <div class="fact">
+                  <h3>Published on</h3>
+                  <p><time datetime="2015-09-03">03 Sep 2015</time></p>
+                </div>
+                <div class="fact">
+                  <h3>Database DOI</h3>
+                  <p>10.4231/D36688J50</p>
+                </div>
+              </div>
+
+              <section class="abstract">
+                <h2>Abstract</h2>
+
+                <h3>Authors</h3>
+                <p>The authors of this database are Wassim Ghannoum, Balaji Sivaramakrishnan, Santiago Pujol (Purdue University), Ann Christine Catlin (Purdue University), Sumudinie Fernando (Purdue University), Nabeel Yoosuf (Purdue University) and Ying Wang (Purdue University).</p>
+                <p>The database was published at NEEShub on September 22 2012 and has been reproduced here to preserve the data and ensure continued access.</p>
+
+                <h3>Database</h3>
+                <p><strong>doi: 10.4231/D36688J50</strong></p>
+                <p>The American Concrete Institute (ACI) committee 369 <em>(Seismic Repair and Rehabilitation)</em> is in the process of updating provisions pertaining to reinforced concrete structures of the American Society of Civil Engineers (ASCE) Standard 41-06 Supplement No.1 (2007) entitled "Seismic Rehabilitation of Existing Structures". This database is part of that ACI 369 committee effort.</p>
+
+                <p>The rectangular column database is one of two parts of the ACI 369 column database. The database was compiled by Balaji Sivaramakrishnan and Dr. Wassim Ghannoum at the University of Texas at Austin and builds on the PEER Structural Performance database (http://nisee.berkeley.edu/spd/index.html). In turn, the PEER database was based on databases built by researchers at the National Institute of Standards and Technology (NIST) - (Taylor and Stone, 1993; Taylor et al., 1997). The PEER column data was collected and processed by University of Washington students Michael Berry, Haili Camarillo, Amit Mookerjee, Myles Parrish, and Zachary Price under the supervision of Professor Marc Eberhard.</p>
+
+                <div class="media-block">
+                  <figure>
+                    <img src="/images/image.png" alt="Placeholder image">
+                    <figcaption>Shear failure of rectangular columns during earthquakes (source: World Housing Encyclopedia) and in the laboratory (source: Aboutaha et el. (1999)).</figcaption>
+                  </figure>
+
+                  <div class="callout">
+                    <p>The database is made public through the DataCenterHub website to facilitate knowledge transfer to the community thus allowing users of ACI 369 documents and the ASCE 41 standard to evaluate the data on which the provisions are based. Posting the database online also serves to facilitate updating of the database with additional experimental data. We encourage the community to point out any column tests that have been omitted in the database or submit any new experimental data that can be added to the database.</p>
+                    <p>Please contact Dr. Ghannoum at (ghannoum@mail.utexas.edu) if you would like to contribute to this database. Any data submitted will be processed and verified by ACI committee 369 before being posted.</p>
+                  </div>
+                </div>
+
+                <p>The data are organized and presented as a spreadsheet: each row contains information about one test and the columns contain information about geometry, reinforcement details, strength of materials, drift ratio at different level of loading, lateral load, shear capacity, and lateral load-deflection data files. Data files can be downloaded in CSV formats.</p>
+
+                <h2>Acknowledgments</h2>
+                <p>This database was posted through generous assistance from Dr. Santiago Pujol, Ann Christine Catlin, Ying Wang, and Sumudinie Fernando at Purdue University. Special thanks to Dr. Murat Melek for providing data for column tests with lap splices</p>
+
+                <h2>Disclaimer</h2>
+                <p>This database was assembled as a service to the research community in earthquake engineering. The University of Texas at Austin, NEEShub, and the researchers who performed the experiments make no warranties to the accuracy of the information that has been collected.</p>
+              </section>
+
+              <section class="citation-box">
+                <h2>Cite this work</h2>
+                <p>Researchers should cite this work as follows:</p>
+                <p>Wassim Ghannoum, Balaji Sivaramakrishnan, Santiago Pujol, Ann Christine Catlin, Sumudinie Fernando, Nabeel Yoosuf and Ying Wang (2015), "NEES: ACI 369 Rectangular Column Database," https://datacenterhub.org/resources/255.</p>
+              </section>
+
+              <section class="tags-box">
+                <h2>Tags</h2>
+                <ul class="tags">
+                  <li>ACI</li>
+                  <li>ACI 369</li>
+                  <li>databases</li>
+                  <li>data management</li>
+                  <li>downloadable</li>
+                  <li>rectangular columns</li>
+                  <li>science questions</li>
+                  <li>structural engineering</li>
+                  <li>topics solved by engineering</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-card">
+        <p>Funding for our research is provided by the National Science Foundation under Grant No. #1724728</p>
+        <p>copyright 2023, DEEDShub</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
