@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEES: SAC Steel Project Database</title>
+<style>
+:root{
+  --teal:#0f8f8d;
+  --teal-dark:#0b6f73;
+  --teal-soft:#e7f6f5;
+  --ink:#1f2937;
+  --muted:#5b6573;
+  --line:#d9e2e8;
+  --bg:#f5f8fa;
+  --white:#ffffff;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.6;
+}
+.topbar{
+  background:linear-gradient(90deg,var(--teal-dark),var(--teal));
+  color:#fff;
+  padding:18px 0;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+.container{
+  width:min(1080px, calc(100% - 32px));
+  margin:0 auto;
+}
+.topbar .label{
+  font-size:14px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  opacity:.9;
+}
+.hero{
+  margin:28px auto 20px;
+  display:grid;
+  grid-template-columns:1.8fr .9fr;
+  gap:24px;
+  align-items:start;
+}
+.card, .section{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(16,24,40,.05);
+}
+.card{padding:28px;}
+.title{
+  margin:0 0 10px;
+  font-size:34px;
+  line-height:1.15;
+  color:#163042;
+}
+.authors{
+  margin:0;
+  color:var(--muted);
+  font-size:17px;
+}
+.cta{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  padding:24px;
+}
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  background:var(--teal);
+  color:#fff;
+  font-weight:700;
+  padding:14px 18px;
+  border-radius:10px;
+  text-align:center;
+}
+.btn:hover{background:var(--teal-dark)}
+.meta-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin:0 0 26px;
+}
+.meta{
+  background:var(--teal-soft);
+  border:1px solid #cfe9e7;
+  border-radius:12px;
+  padding:16px;
+}
+.meta h3{
+  margin:0 0 6px;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:var(--teal-dark);
+}
+.meta p{
+  margin:0;
+  font-size:16px;
+}
+.section{
+  padding:28px;
+  margin:0 0 20px;
+}
+.section h2{
+  margin:0 0 16px;
+  font-size:28px;
+  color:#163042;
+}
+.content h1,.content h2,.content h3,.content h4{
+  color:#163042;
+  margin:22px 0 10px;
+}
+.content h3{font-size:22px}
+.content h4{font-size:18px}
+.content p{margin:0 0 14px}
+.content ul,.content ol{margin:0 0 14px 22px}
+.content li{margin:0 0 6px}
+.content a{
+  color:inherit;
+  text-decoration:none;
+  pointer-events:none;
+}
+.content img{
+  display:block;
+  max-width:100%;
+  width:min(100%,720px);
+  height:auto;
+  margin:16px auto;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#f0f4f7;
+}
+.content table{
+  width:100%;
+  border-collapse:collapse;
+  margin:10px 0 18px;
+}
+.content td,.content th{
+  border:1px solid var(--line);
+  padding:12px;
+  vertical-align:top;
+}
+.content .plain-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  padding:0;
+  list-style:none;
+  margin:0;
+}
+.content .plain-tags li{
+  margin:0;
+  padding:7px 10px;
+  border-radius:999px;
+  background:var(--teal-soft);
+  border:1px solid #cfe9e7;
+  color:#24414a;
+  font-size:14px;
+}
+.footer{
+  color:var(--muted);
+  font-size:14px;
+  padding:10px 0 32px;
+}
+.note{
+  font-size:14px;
+  color:var(--muted);
+}
+@media (max-width: 860px){
+  .hero{grid-template-columns:1fr}
+  .meta-grid{grid-template-columns:1fr}
+  .title{font-size:28px}
+}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="label">Database Resource</div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1 class="title">NEES: SAC Steel Project Database</h1>
+        <p class="authors">By The Structural Engineers Association of California (SEAOC), the Applied Technology Council (ATC) and the Consortium of Universities for Research in Earthquake Engineering (CUREE)</p>
+      </div>
+      <div class="card cta">
+        <a class="btn" href="https://www.dropbox.com/" target="_blank" rel="noopener">View Data</a>
+        <div class="note">Data link updated to a generic Dropbox destination.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="meta-grid">
+        <div class="meta">
+          <h3>Category</h3>
+          <p>Databases</p>
+        </div>
+        <div class="meta">
+          <h3>Published on</h3>
+          <p>03 Sep 2015</p>
+        </div>
+        
+      <div class="meta">
+        <h3>Database DOI</h3>
+        <p>10.4231/D3FQ9Q536</p>
+      </div>
+    
+      </div>
+
+      <h2>Abstract</h2>
+      <div class="content">
+        
+<div>
+<p>
+</p><h3>Authors</h3>
+The authors of this database are the Structural Engineers Association of California (SEAOC), the Applied Technology Council (ATC) and the Consortium of Universities for Research in Earthquake Engineering (CUREE). 
+The database was published at 
+NEEShub on   January 10 2011 and has been reproduced here  to preserve the data and ensure continued access. 
+<br/><br/>
+<b>Note</b>: Some of the Referenced Reports  in this database were previously accessible as downloadable PDFs from  the  SAC  Website. The SAC Website no longer supports external access to report PDFs. The links for these Referenced Reports will now take users to the SAC Connections Database interface, where report PDFs can be queried and downloaded.
+<p></p>
+<p>
+<br/>
+</p><h3>Database</h3>
+<b>doi:  10.4231/D3FQ9Q536</b>
+<br/><br/>
+<p></p>
+<img alt="Image placeholder" src="/images/image.png"/> 
+The SAC Joint Venture was formed in mid-1994 with the specific goal of investigating the damage to welded steel moment frame buildings in the 1994 Northridge earthquake and developing repair techniques and new design approaches to minimize damage to steel moment frame buildings in future earthquakes. From the outset, it was recognized that an interdisciplinary approach to the solution was required, involving practicing structural engineers, engineering researchers, and building officials and other representatives of regulatory agencies.
+<p>The directors of the three Joint Venture partners - the Structural Engineers Association of California (SEAOC), the Applied Technology Council (ATC), and Consortium of Universities for Research in Earthquake Engineering (CUREE)- realized that their diverse memberships were uniquely qualified in this regard, and the SAC Joint Venture was formed.</p>
+<p>With funding from the Federal Emergency Management Agency (FEMA) and the California Office of Emergency Services (OES), SAC initially embarked on a 2-year problem-focused research program to develop interim solutions for the identification, evaluation, repair, and modification of damaged welded steel moment frame buildings. Effort was also devoted to new design and construction approaches. Numerous other technical reports and guidelines have been produced. The project concluded in 2000.</p>
+<p> </p>
+<!--   AUTHORS
+by Structural Engineers Association of California (SEAOC), Applied Technology Council (ATC), Consortium of Universities for Research in Earthquake Engineering (CUREE)
+--> </div>
+
+      </div>
+    </section>
+    
+        <section class="section">
+          <h2>Cite this work</h2>
+          <div class="content">
+<div>
+<p>Researchers should cite this work as follows:</p>
+<ul>
+<li>
+<p>The Structural Engineers Association of California (SEAOC), the Applied Technology Council (ATC) and the Consortium of Universities for Research in Earthquake Engineering (CUREE) (2015), "NEES: SAC Steel Project Database," https://datacenterhub.org/resources/262.</p>
+<p>
+BibTex <span>|</span>
+EndNote
+</p>
+</li>
+</ul>
+</div>
+</div>
+        </section>
+    
+        <section class="section">
+          <h2>Tags</h2>
+          <div class="content"><ul class="plain-tags"><li>ATC</li><li>CUREE</li><li>databases</li><li>Northridge</li><li>SEACC</li><li>steel connections</li><li>steel structures</li><li>structural engineering</li></ul></div>
+        </section>
+    <div class="footer">copyright 2023, DEEDShub</div>
+  </main>
+</body>
+</html>

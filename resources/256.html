@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEES: ACI 445 Punching Shear Collected Databank</title>
+<style>
+:root{
+  --teal:#0f8f8d;
+  --teal-dark:#0b6f73;
+  --teal-soft:#e7f6f5;
+  --ink:#1f2937;
+  --muted:#5b6573;
+  --line:#d9e2e8;
+  --bg:#f5f8fa;
+  --white:#ffffff;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.6;
+}
+.topbar{
+  background:linear-gradient(90deg,var(--teal-dark),var(--teal));
+  color:#fff;
+  padding:18px 0;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+.container{
+  width:min(1080px, calc(100% - 32px));
+  margin:0 auto;
+}
+.topbar .label{
+  font-size:14px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  opacity:.9;
+}
+.hero{
+  margin:28px auto 20px;
+  display:grid;
+  grid-template-columns:1.8fr .9fr;
+  gap:24px;
+  align-items:start;
+}
+.card, .section{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(16,24,40,.05);
+}
+.card{padding:28px;}
+.title{
+  margin:0 0 10px;
+  font-size:34px;
+  line-height:1.15;
+  color:#163042;
+}
+.authors{
+  margin:0;
+  color:var(--muted);
+  font-size:17px;
+}
+.cta{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  padding:24px;
+}
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  background:var(--teal);
+  color:#fff;
+  font-weight:700;
+  padding:14px 18px;
+  border-radius:10px;
+  text-align:center;
+}
+.btn:hover{background:var(--teal-dark)}
+.meta-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin:0 0 26px;
+}
+.meta{
+  background:var(--teal-soft);
+  border:1px solid #cfe9e7;
+  border-radius:12px;
+  padding:16px;
+}
+.meta h3{
+  margin:0 0 6px;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:var(--teal-dark);
+}
+.meta p{
+  margin:0;
+  font-size:16px;
+}
+.section{
+  padding:28px;
+  margin:0 0 20px;
+}
+.section h2{
+  margin:0 0 16px;
+  font-size:28px;
+  color:#163042;
+}
+.content h1,.content h2,.content h3,.content h4{
+  color:#163042;
+  margin:22px 0 10px;
+}
+.content h3{font-size:22px}
+.content h4{font-size:18px}
+.content p{margin:0 0 14px}
+.content ul,.content ol{margin:0 0 14px 22px}
+.content li{margin:0 0 6px}
+.content a{
+  color:inherit;
+  text-decoration:none;
+  pointer-events:none;
+}
+.content img{
+  display:block;
+  max-width:100%;
+  width:min(100%,720px);
+  height:auto;
+  margin:16px auto;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#f0f4f7;
+}
+.content table{
+  width:100%;
+  border-collapse:collapse;
+  margin:10px 0 18px;
+}
+.content td,.content th{
+  border:1px solid var(--line);
+  padding:12px;
+  vertical-align:top;
+}
+.content .plain-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  padding:0;
+  list-style:none;
+  margin:0;
+}
+.content .plain-tags li{
+  margin:0;
+  padding:7px 10px;
+  border-radius:999px;
+  background:var(--teal-soft);
+  border:1px solid #cfe9e7;
+  color:#24414a;
+  font-size:14px;
+}
+.footer{
+  color:var(--muted);
+  font-size:14px;
+  padding:10px 0 32px;
+}
+.note{
+  font-size:14px;
+  color:var(--muted);
+}
+@media (max-width: 860px){
+  .hero{grid-template-columns:1fr}
+  .meta-grid{grid-template-columns:1fr}
+  .title{font-size:28px}
+}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="label">Database Resource</div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1 class="title">NEES: ACI 445 Punching Shear Collected Databank</h1>
+        <p class="authors">By Carlos Emilio Ospina, Gerd Birkle, Widianto, Ying Wang, Sudheera R. Fernando, Sumudinie Fernando, Ann Christine Catlin and Santiago Pujol.</p>
+      </div>
+      <div class="card cta">
+        <a class="btn" href="https://www.dropbox.com/" target="_blank" rel="noopener">View Data</a>
+        <div class="note">Data link updated to a generic Dropbox destination.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="meta-grid">
+        <div class="meta">
+          <h3>Category</h3>
+          <p>Databases</p>
+        </div>
+        <div class="meta">
+          <h3>Published on</h3>
+          <p>03 Sep 2015</p>
+        </div>
+        
+      <div class="meta">
+        <h3>Database DOI</h3>
+        <p>10.4231/D3TX35618</p>
+      </div>
+    
+      </div>
+
+      <h2>Abstract</h2>
+      <div class="content">
+        <h3>Authors</h3>
+<p>The authors of this database are Carlos Emilio Ospina, Gerd Birkle, Widianto, Ying Wang, Sudheera R. Fernando (Purdue University), Sumudinie Fernando (Purdue University), Ann Christine Catlin (Purdue University) and Santiago Pujol (Purdue University). The database was published at NEEShub on October 06 2011and has been reproduced here to preserve the data and ensure continued access.</p>
+<h3>Database</h3>
+<p>doi: 10.4231/D3TX35618</p>
+<p>This resource features a database created by The American Concrete Institute Committee 445C in an effort led by Carlos E. Ospina carlos.ospina@abam.com Gerd Birkle gerd.birkle@stantec.com Widianto Widianto widianto.widianto@exxonmobil.com Dan Kuchma kuchma@uiuc.edu Neil Hawkins nmhawkin@uiuc.edu</p>
+<p>The data presented here were obtained from tests of reinforced concrete slabs loaded statically to simulate concentric slab punching due to gravity loads. The data are fundamental in understanding the resistance of slabs to punching shear, which is critical in structures in regions of both low and high seismicity.</p>
+<p>USING THE DATABASE Please login to DataCenterHub to access this database. If you are not a registered user, register at https://datacenterhub.org. Click on the black View Database button to browse the database. You can sort any column, search or filter on any number of columns, and export the database as a spreadsheet. -- in whole or in part. The columns are color coded for easier data exploration:</p>
+<p>green pink Test Specimen, Geometry and Set- Material Properties up</p>
+<p>COLLECTED DATA</p>
+<p>blue Slab Reinforcement Details</p>
+<p>yellow</p>
+<p>purple</p>
+<p>teal</p>
+<p>Test Results</p>
+<p>Observations by Task Group</p>
+<p>Derived Quantities</p>
+<p>The database contains raw data as reported by the researcher(s) with some basic post-processing, distributed as follows: The collected data correspond to raw data as reported by previous researchers. The data have been organized in 5 blocks (reference information, description of test specimen, description of material properties, slab reinforcement details, and test results) including room for commentary by the committee. The variables used to describe the test specimen properties are self explanatory. The databank developers recently published a paper which can be used as a manual.</p>
+<p>CRITERIA (Last 11 columns) These columns contain the results of a basic-level post-processing of collected (raw) data. The derived quantities are typically used by researchers to characterize both the test specimens and the results, and to calculate punching capacity. Conversion factors used to evaluate the concrete compressive strength listed under the heading f1c are</p>
+<p>CY100x100 CY61x122 CY75x150 CY100x200 CY150x300 CY160x320 CY100x300 CY120x360 PR120x360 CU1 0.84 0.89 0.90 0.92 0.95 1.00 1.00 1.05 1.00 0.68 In the cases of test slabs for which the reinforcement ratio was not reported by the researcher or insufficient information was reported to allow its calculation, column rho-near provides estimated reinforcement ratios within a column strip of width b1+3h. ACI committee 445C is in the process of preparing a series of checks and criteria that can be used to evaluate the mode of slab failure, namely i) slab flexural capacity evaluation and ductility check, and ii) check for bond failure of the slab reinforcement, together with a series of Data Acceptance Criteria (DAC) to be able to retrieve specific test data.</p>
+<h2>Cite this work</h2>
+<p>Researchers should cite this work as follows: Carlos Emilio Ospina, Gerd Birkle, Widianto, Ying Wang, Sudheera R. Fernando, Sumudinie Fernando, Ann Christine Catlin and Santiago Pujol. (2015), &quot;NEES: ACI 445 Punching Shear Collected Databank,&quot; https://datacenterhub.org/resources/256.</p>
+<h2>Tags</h2><ul class="plain-tags"><li>ACI</li><li>ACI 445</li><li>databases</li><li>punching shear</li><li>structural engineering</li></ul>
+      </div>
+    </section>
+    
+    
+    <div class="footer">copyright 2023, DEEDShub</div>
+  </main>
+</body>
+</html>
